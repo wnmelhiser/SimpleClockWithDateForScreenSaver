@@ -44,10 +44,7 @@
 </head>
 <body>
     <!-- Visit This URL https://sharpweather.com/widget/r/#c=cbkg=rgb(69,90,100)&c=codd=rgb(84,110,122) and edit your Weather Widget. Else, if you don't want it, delete or comment out this weather block. -->
-
-    <!-- Weather block Starts 
     <div id="idf740c8f43de9b" a='{"t":"r","v":"1.2","lang":"en","locs":[1165],"ssot":"f","sics":"ds","cbkg":"rgb(69,90,100)","cfnt":"#FFFFFF","codd":"rgb(84,110,122)","cont":"#E0E0E0"}'>Weather Data Source: <a href="https://sharpweather.com/weather_minneapolis/30_days/">Minneapolis 30 days weather</a></div><script async src="https://static1.sharpweather.com/widgetjs/?id=idf740c8f43de9b"></script>
-    Weather block Ends -->
 
 
     <div class="clock" id="clock"></div>
@@ -88,7 +85,7 @@
             //// Greek
             // const days = ['Κυριακή', 'Δευτέρα', 'Τρίτη', 'Τετάρτη', 'Πέμπτη', 'Παρασκευή', 'Σάββατο'];
             const day = days[now.getDay()];
-            const date = now.toLocaleDateString('de-DE');
+            const date = now.toLocaleDateString('en-EN');
 
             document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
             document.getElementById('date').textContent = `${day}, ${date}`;
