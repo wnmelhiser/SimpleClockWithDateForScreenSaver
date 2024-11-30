@@ -55,12 +55,12 @@
             //const hours = String(now.getHours()).padStart(2, '0');
             //const minutes = String(now.getMinutes()).padStart(2, '0');
             //const seconds = String(now.getSeconds()).padStart(2, '0');
-            const time = now.toLocaleTimeString('en-US');
             
             //// Date
             const now = new Date();
             const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
             const day = days[now.getDay()];
+            const time = now.toLocaleTimeString('en-US', { hour: "2-digit", minute: "2-digit" });
             const date = now.toLocaleDateString('en-US');
 
             //document.getElementById('clock').textContent = time;
